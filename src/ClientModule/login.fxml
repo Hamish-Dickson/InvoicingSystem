@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.72" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientModule.LoginScreenController">
+   <children>
+      <Label layoutX="559.0" layoutY="34.0" text="Invoicing System">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c8c9c9" height="228.0" layoutX="463.0" layoutY="246.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="357.0" />
+      <TextField id="uNameField" fx:id="uNameField" layoutX="611.0" layoutY="279.0" />
+      <PasswordField id="pwField" fx:id="pwField" layoutX="611.0" layoutY="329.0" onAction="#login"/>
+
+      <Label layoutX="501.0" layoutY="326.0" text="Password:">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button id="btnLogin" fx:id="btnLogin" layoutX="611.0" layoutY="375.0" mnemonicParsing="false" onAction="#login" prefHeight="57.0" prefWidth="87.0" text="Submit" />
+      <Label layoutX="495.0" layoutY="276.0" text="Username:">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
